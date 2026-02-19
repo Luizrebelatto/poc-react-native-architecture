@@ -11,3 +11,19 @@ React native was build to be thread-safe, Security is guaranteed because immutab
 ### use two different renders
 - UI thread (often called main): The only thread that can manipulate host views.
 - JavaScript thread: This is where React’s render phase, as well as layout, are executed.
+
+### Render JS Thread
+- Responsible to run js code
+- components, states, diffs, updates
+
+![Render JS Thread Diagram](diagramJSThread.png)
+
+```javascript
+const [count, setCount] = useState(0);
+
+return (
+  <Text onPress={() => setCount(count + 1)}>
+    {count}
+  </Text>
+);
+```
