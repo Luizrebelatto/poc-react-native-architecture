@@ -1,5 +1,7 @@
 # threading model
 
+React native was build to be thread-safe, Security is guaranteed because immutable data structures are used internally in the framework imposed by “const correctness.”
+
 #### Goals of this architecture
 - interruptible rendering
 - Prioritize high-priority events
