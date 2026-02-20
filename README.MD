@@ -27,3 +27,7 @@ return (
   </Text>
 );
 ```
+
+### Render UI Thread
+- Run Animations
+- Draw pixel
